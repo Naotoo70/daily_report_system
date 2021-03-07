@@ -39,6 +39,50 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    @Column(name = "attendance_time_hour", length = 255, nullable = false)
+    private String attendance_time_hour;
+
+    @Column(name = "attendance_time_minutes", length = 255, nullable = false)
+    private String attendance_time_minutes;
+
+    @Column(name = "leave_time_hour", length = 255, nullable = false)
+    private String leave_time_hour;
+
+    @Column(name = "leave_time_minutes", length = 255, nullable = false)
+    private String leave_time_minutes;
+
+    public String getLeave_time_hour() {
+        return leave_time_hour;
+    }
+
+    public void setLeave_time_hour(String leave_time_hour) {
+        this.leave_time_hour = leave_time_hour;
+    }
+
+    public String getLeave_time_minutes() {
+        return leave_time_minutes;
+    }
+
+    public void setLeave_time_minutes(String leave_time_minutes) {
+        this.leave_time_minutes = leave_time_minutes;
+    }
+
+    public String getAttendance_time_hour() {
+        return attendance_time_hour;
+    }
+
+    public void setAttendance_time_hour(String attendance_time_hour) {
+        this.attendance_time_hour = attendance_time_hour;
+    }
+
+    public String getAttendance_time_minutes() {
+        return attendance_time_minutes;
+    }
+
+    public void setAttendance_time_minutes(String attendance_time_minutes) {
+        this.attendance_time_minutes = attendance_time_minutes;
+    }
+
     @Lob
     @Column(name = "content", nullable = false)
     private String content;

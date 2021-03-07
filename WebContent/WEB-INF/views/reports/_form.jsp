@@ -22,6 +22,19 @@
 <input type="text" name="title" value="${report.title}" />
 <br /><br />
 
+<label for="attendance_time_hour">出勤時</label><br />
+<input type="number" name="attendance_time_hour" value="${report.attendance_time_hour}"/><br />
+
+<label for="attendance_time_minutes">出勤分</label><br />
+<input type="number" name="attendance_time_minutes" value="${report.attendance_time_minutes}"/><br />
+
+<label for="leave_time_hour">退勤時</label><br />
+<input type="number" name="leave_time_hour" value="${report.leave_time_hour}"/><br />
+
+<label for="leave_time_minutes">退勤分</label><br />
+<input type="number" name="leave_time_minutes" value="${report.leave_time_minutes}"/><br />
+<br /><br />
+
 <label for="content">内容</label><br />
 <textarea name="content" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
